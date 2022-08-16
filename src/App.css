@@ -1,0 +1,111 @@
+.App {
+	background-color: #05292e;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.App-header {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.App-form > button {
+	background-color: black;
+	color: white;
+	width: 80px;
+	height: 30px;
+	border: 0.5px solid white;
+	cursor: pointer;
+}
+
+input {
+	height: 30px;
+	border: 0;
+	background-color: rgb(81, 79, 79);
+	text-align: center;
+	color: white;
+	outline: none;
+}
+
+.container-location {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 90%;
+}
+
+.container-location-titulo {
+	text-align: center;
+}
+
+.container-location-info {
+	display: inherit;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-location-info > li > span {
+	font-size: x-large;
+	font-weight: bold;
+}
+
+.card {
+	display: flex;
+	padding-left: 100px;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+	margin: 10px;
+	left: 728px;
+	top: 587px;
+	background: #227b88;
+	border-radius: 0px 0px 4px 4px;
+}
+
+.card-container-header > img {
+	width: 100%;
+}
+
+.status {
+	padding-left: 20px;
+	font-size: 30px;
+}
+
+.card-container-info {
+	padding-left: 20px;
+}
+
+.card-container-info-list > li > span {
+	font-size: large;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+	.container-location-info {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.card-container {
+		width: 550px;
+		flex-direction: row;
+	}
+
+	.card-container-info {
+		padding-top: 20px;
+	}
+
+	.card-container-header {
+		display: flex;
+		flex-direction: row;
+	}
+}
